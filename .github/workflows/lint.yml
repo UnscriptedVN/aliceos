@@ -20,6 +20,7 @@ jobs:
           sudo dpkg --add-architecture i386
           sudo apt update
           sudo apt install libx11-6:i386
+          ldd /github/renpy/lib/linux-x86_64/renpy
       - name: Setup OpenGL
         uses: openrndr/setup-opengl@v1.1      
       - name: Lint project
