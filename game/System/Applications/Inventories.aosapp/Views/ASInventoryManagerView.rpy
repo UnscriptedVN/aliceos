@@ -86,7 +86,7 @@ screen ASInventoryManagerView(currentItem=None):
                         xfill True
 
                         if currentItemView == None:
-                            text "Select an item from the lest side to view and use it.":
+                            text "Select an item from the left side to view and use it.":
                                 xalign 0.5
 
                         else:
