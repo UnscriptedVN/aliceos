@@ -24,7 +24,7 @@ jobs:
       - name: Setup OpenGL
         uses: openrndr/setup-opengl@v1.1      
       - name: Lint project
-        uses: ProjectAliceDev/renpy-lint-action@v1.1.0
+        uses: UnscriptedVN/renpy-lint-action@master
         with:
           sdk-version: ${{ matrix.renpy-versions }}
           project-dir: '.'
