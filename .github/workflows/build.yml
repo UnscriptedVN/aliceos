@@ -25,12 +25,7 @@ jobs:
       - name: Clone source
         uses: actions/checkout@v1
         with:
-          fetch-depth: 50
-      - name: Install LibX11
-        shell: bash
-        run: sudo apt install -y libx11-6
-      - name: Setup OpenGL
-        uses: openrndr/setup-opengl@v1.1      
+          fetch-depth: 50 
       - name: Add release tag to Build ID
         shell: bash
         run: |
@@ -49,7 +44,7 @@ jobs:
           sdk: ${{ matrix.renpy-versions }}
       - name: Build AliceOS archive
         id: buildseq
-        uses: ProjectAliceDev/renpy-build-action@v1.1.1
+        uses: ProjectAliceDev/renpy-build-action@v1.1.2
         with:
           sdk-version: ${{ matrix.renpy-versions }}
           project-dir: '.'

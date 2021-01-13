@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 50    
       - name: Lint project
-        uses: UnscriptedVN/renpy-lint-action@master
+        uses: ProjectAliceDev/renpy-lint-action@v1.1.2
         with:
           sdk-version: ${{ matrix.renpy-versions }}
           project-dir: '.'
